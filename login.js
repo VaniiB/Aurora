@@ -26,7 +26,7 @@ function validateForm() {
 
     // Si el usuario está registrado y la contraseña coincide, redirigir al usuario a la página de inicio
     if (usuarioEncontrado) {
-        window.location.href = "index.html";
+        window.location.href = "indexpaciente.html";
     } else {
         alert("Usuario no registrado.");
         // Redirigir al usuario a la página de registro
