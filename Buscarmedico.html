@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TW12j5gF9z93I1aJhTvA+pp1dUPODwMInNT86s8k3sYO6WWK7cIitUbQ20P4iQlH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Stylesmedico.css">
+
+
+    <title>Aurora</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <p class="header-text">La salud y el bienestar de nuestros pacientes y su equipo de atención médica siempre
+                serán nuestra prioridad, por lo que seguimos las mejores prácticas de limpieza.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo-container">
+            <a href="indexpaciente.html" class="logo-link">
+                <img src="img/Vector (1).png" alt="Logo de la clínica" width="35" height="33">
+                <p class="clinic-name">Clinica Aurora Salud</p>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Encontrar Doctores</a></li>
+            <li><a href="#">Solicitud de Turno</a></li>
+            <li><a href="#">Visualización de Turnos</a></li>
+            <li><a href="#">Ingresar como Profesional</a></li>
+        </ul>
+        <div class="login-button">
+            <button>Ingresar</button>
+        </div>
+    </nav>
+
+    <div class="gradient-bar"></div>
+
+
+
+
+    <div class="search-container">
+        <div class="input-container with-icon">
+            <input type="text" placeholder="Buscar ubicación" class="location-search">
+            <span class="input-icon search-location-icon"></span>
+        </div>
+        <div class="input-container with-icon">
+            <input type="text" placeholder="Buscar especialidad" class="speciality-search">
+            <span class="input-icon search-speciality-icon"></span>
+        </div>
+        <button class="search-button">
+            <span class="button-icon search-button-icon"></span>
+            Buscar
+        </button>
+
+
+    </div>
+
+
+    <div class="search-container">
+        <div class="filters-container">
+            <div class="filter-dropdown">
+                <select class="availability-filter">
+                    <option value="Hoy">Hoy</option>
+                    <option value="Esta_Semana">Esta Semana</option>
+                    <option value="Este_Mes">Este Mes</option>
+                    <option value="Mes_Proximo">Proximo mes</option>
+                </select>
+            </div>
+            <div class="filter-dropdown">
+                <select class="additional-filters">
+                    <option value="filtro_1">Tipo de Consulta</option>
+                    <option value="filtro_2">Online</option>
+                    <option value="filtro_3">Presencial</option>
+                </select>
+            </div>
+            <div class="filter-dropdown">
+                <label for="relevance-filter">Ordenar Por:</label>
+                <select class="relevance-filter">
+                    <option value="relevancia">Relevancia</option>
+                    <option value="nombre">Nombre</option>
+                    <option value="fecha">Fecha</option>
+                </select>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="info-text-container">
+        <h2 class="location-text-cantidad">35 médicos disponibles en Palermo, Buenos Aires</h2>
+        <p class="description-text">
+            <img src="img buscar medicos/img/verified.1f87346e730e 1.png" alt="Icono" class="info-icon">
+            <span class="text-with-icon">Reserva citas con tiempos de espera mínimos y detalles verificados del
+                médico</span>
+        </p>
+    </div>
+
+
+
+
+    <div class="profile-box">
+
+
+        <div class="profile-image">
+            <img src="img medicos registro especialidad/cardiologa.jpg" alt="Foto de perfil">
+        </div>
+
+
+        <div class="profile-details">
+            <h2 class="name">Dr. Alejandro Martínez</h2>
+            <p class="specialty">Especialidad: Dentista</p>
+            <p class="experience">Años de Experiencia: 5 años</p>
+            <p class="location">Ubicación: Buenos Aires, Argentina</p>
+            <p class="center-name">Centro de Salud:</p>
+            <p class="price">Precio: <span class="discount">2000$</span><span class="old-price">2500$</span></p>
+            <hr class="dotted-line">
+            <button class="like-button">
+                <span class="like-icon">👍</span> 99%
+            </button>
+            <p class="patient-history">93 historial de pacientes</p>
+        </div>
+        <div class="schedule-section">
+            <p class="schedule-text">Horarios disponibles</p>
+            <button class="schedule-button">Agendar cita</button>
+        </div>
+
+
+
+
+        <div class="calendar" id="calendar">
+            <div class="calendar-header">
+                <button id="prevDay">&#8249;</button>
+                <div class="dates">
+                    <div class="date">Hoy
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                    <div class="date">Mañana
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                    <div class="date">Pasado mañana
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                </div>
+                <button id="nextDay">&#8250;</button>
+            </div>
+
+
+
+
+            <div class="Turnos">
+                <div class="columna-principal">Mañana
+                    <button class="horario-button-principal">08:00</button>
+                    <button class="horario-button-principal">09:00</button>
+                    <button class="horario-button-principal">10:00</button>
+                </div>
+
+                <div class="columna">Tarde&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button class="horario-button">12:00</button>
+                    <button class="horario-button">13:00</button>
+                    <button class="horario-button">14:00</button>
+                    <button class="horario-button">15:00</button>
+                </div>
+
+                <div class="columna">Noche&nbsp&nbsp&nbsp
+                    <button class="horario-button">18:00</button>
+                    <button class="horario-button">19:00</button>
+                    <button class="horario-button">20:00</button>
+                    <button class="horario-button">21:00</button>
+                    <button class="horario-button">22:00</button>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="profile-box">
+
+
+        <div class="profile-image">
+            <img src="img medicos registro especialidad/ginecologa.jpg" alt="Foto de perfil">
+        </div>
+
+
+        <div class="profile-details">
+            <h2 class="name">Dra. Valeria García</h2>
+            <p class="specialty">Especialidad: Dentista</p>
+            <p class="experience">Años de Experiencia: 5 años</p>
+            <p class="location">Ubicación: Buenos Aires, Argentina</p>
+            <p class="center-name">Centro de Salud:</p>
+            <p class="price">Precio: <span class="discount">2000$</span><span class="old-price">2500$</span></p>
+            <hr class="dotted-line">
+            <button class="like-button">
+                <span class="like-icon">👍</span> 99%
+            </button>
+            <p class="patient-history">93 historial de pacientes</p>
+        </div>
+        <div class="schedule-section">
+            <p class="schedule-text">Horarios disponibles</p>
+            <button class="schedule-button">Agendar cita</button>
+        </div>
+
+
+
+
+        <div class="calendar" id="calendar">
+            <div class="calendar-header">
+                <button id="prevDay">&#8249;</button>
+                <div class="dates">
+                    <div class="date">Hoy
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                    <div class="date">Mañana
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                    <div class="date">Pasado mañana
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                </div>
+                <button id="nextDay">&#8250;</button>
+            </div>
+
+
+
+
+            <div class="Turnos">
+                <div class="columna-principal">Mañana
+                    <button class="horario-button-principal">08:00</button>
+                    <button class="horario-button-principal">09:00</button>
+                    <button class="horario-button-principal">10:00</button>
+                </div>
+
+                <div class="columna">Tarde&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button class="horario-button">12:00</button>
+                    <button class="horario-button">13:00</button>
+                    <button class="horario-button">14:00</button>
+                    <button class="horario-button">15:00</button>
+                </div>
+
+                <div class="columna">Noche&nbsp&nbsp&nbsp
+                    <button class="horario-button">18:00</button>
+                    <button class="horario-button">19:00</button>
+                    <button class="horario-button">20:00</button>
+                    <button class="horario-button">21:00</button>
+                    <button class="horario-button">22:00</button>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <div class="profile-box">
+
+
+        <div class="profile-image">
+            <img src="img medicos registro especialidad/neurologo.jpg" alt="Foto de perfil">
+        </div>
+
+
+        <div class="profile-details">
+            <h2 class="name">Dr. Sebastián López</h2>
+            <p class="specialty">Especialidad: Dentista</p>
+            <p class="experience">Años de Experiencia: 5 años</p>
+            <p class="location">Ubicación: Buenos Aires, Argentina</p>
+            <p class="center-name">Centro de Salud:</p>
+            <p class="price">Precio: <span class="discount">2000$</span><span class="old-price">2500$</span></p>
+            <hr class="dotted-line">
+            <button class="like-button">
+                <span class="like-icon">👍</span> 99%
+            </button>
+            <p class="patient-history">93 historial de pacientes</p>
+        </div>
+        <div class="schedule-section">
+            <p class="schedule-text">Horarios disponibles</p>
+            <button class="schedule-button">Agendar cita</button>
+        </div>
+
+
+
+
+        <div class="calendar" id="calendar">
+            <div class="calendar-header">
+                <button id="prevDay">&#8249;</button>
+                <div class="dates">
+                    <div class="date">Hoy
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                    <div class="date">Mañana
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                    <div class="date">Pasado mañana
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                </div>
+                <button id="nextDay">&#8250;</button>
+            </div>
+
+
+
+
+            <div class="Turnos">
+                <div class="columna-principal">Mañana
+                    <button class="horario-button-principal">08:00</button>
+                    <button class="horario-button-principal">09:00</button>
+                    <button class="horario-button-principal">10:00</button>
+                </div>
+
+                <div class="columna">Tarde&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button class="horario-button">12:00</button>
+                    <button class="horario-button">13:00</button>
+                    <button class="horario-button">14:00</button>
+                    <button class="horario-button">15:00</button>
+                </div>
+
+                <div class="columna">Noche&nbsp&nbsp&nbsp
+                    <button class="horario-button">18:00</button>
+                    <button class="horario-button">19:00</button>
+                    <button class="horario-button">20:00</button>
+                    <button class="horario-button">21:00</button>
+                    <button class="horario-button">22:00</button>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+    <div class="profile-box">
+
+
+        <div class="profile-image">
+            <img src="img medicos registro especialidad/oftalmologo.jpg" alt="Foto de perfil">
+        </div>
+
+
+        <div class="profile-details">
+            <h2 class="name">Dra. María Fernández</h2>
+            <p class="specialty">Especialidad: Dentista</p>
+            <p class="experience">Años de Experiencia: 5 años</p>
+            <p class="location">Ubicación: Buenos Aires, Argentina</p>
+            <p class="center-name">Centro de Salud:</p>
+            <p class="price">Precio: <span class="discount">2000$</span><span class="old-price">2500$</span></p>
+            <hr class="dotted-line">
+            <button class="like-button">
+                <span class="like-icon">👍</span> 99%
+            </button>
+            <p class="patient-history">93 historial de pacientes</p>
+        </div>
+        <div class="schedule-section">
+            <p class="schedule-text">Horarios disponibles</p>
+            <button class="schedule-button">Agendar cita</button>
+        </div>
+
+
+
+
+        <div class="calendar" id="calendar">
+            <div class="calendar-header">
+                <button id="prevDay">&#8249;</button>
+                <div class="dates">
+                    <div class="date">Hoy
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                    <div class="date">Mañana
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                    <div class="date">Pasado mañana
+                        <p class="date-info">20 horarios disponibles</p>
+                        <div class="linea"></div>
+                    </div>
+                </div>
+                <button id="nextDay">&#8250;</button>
+            </div>
+
+
+
+
+            <div class="Turnos">
+                <div class="columna-principal">Mañana
+                    <button class="horario-button-principal">08:00</button>
+                    <button class="horario-button-principal">09:00</button>
+                    <button class="horario-button-principal">10:00</button>
+                </div>
+
+                <div class="columna">Tarde&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <button class="horario-button">12:00</button>
+                    <button class="horario-button">13:00</button>
+                    <button class="horario-button">14:00</button>
+                    <button class="horario-button">15:00</button>
+                </div>
+
+                <div class="columna">Noche&nbsp&nbsp&nbsp
+                    <button class="horario-button">18:00</button>
+                    <button class="horario-button">19:00</button>
+                    <button class="horario-button">20:00</button>
+                    <button class="horario-button">21:00</button>
+                    <button class="horario-button">22:00</button>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="pagination-container">
+        <div class="pagination">
+
+            <span class="page-numbers">
+                <button class="page-number active">1</button>
+                <button class="page-number">2</button>
+                <button class="page-number">3</button>
+                <button class="page-number">4</button>
+                <button class="page-number">5</button>
+                <button class="page-number">6</button>
+                <button class="page-number">7</button>
+                <button class="page-number">8</button>
+                <button class="page-number">9</button>
+                <button class="page-number">10</button>
+            </span>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+    <div class="location-info">
+        <p class="info-text">Proporcione la ubicación actual para ver dentistas cercanos a usted.</p>
+        <p class="location-text">Estás viendo resultados de Buenos Aires</p>
+        <div class="button-group">
+            <button class="street-button">Avenida Corrientes</button>
+            <button class="street-button">Calle Florida</button>
+            <button class="street-button">Avenida de Mayo</button>
+        </div>
+        <br>
+        <div class="button-group">
+            <button class="search-location">Buscar ubicación</button>
+            <button class="current-location">Ubicación actual</button>
+        </div>
+        <div class="image-container">
+            <img src="img buscar medicos/img/sensodyne_dweb.png.png" alt="Imagen de ubicación" width="400" height="268">
+        </div>
+    </div>
+
+
+
+    <div class="caja-completa">
+        <div class="faq-container">
+            <h3 class="faq-title">Obten tu Respuesta</h3>
+            <h2 class="faq-title">Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <img src="img buscar medicos/img/Group 1000011090.png" alt="Foto" class="faq-image">
+                <div class="faq-content">
+                    <div class="pregunta">
+                        <h3 class="faq-question">¿Por qué elegir nuestros servicios médicos?</h3>
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nuestros servicios médicos se distinguen por ofrecer atención personalizada y de alta calidad
+                            a
+                            todos nuestros pacientes. Contamos con un equipo de profesionales altamente capacitados y
+                            comprometidos con la salud y el bienestar de quienes nos eligen. Además, nuestras
+                            instalaciones
+                            están equipadas con la tecnología más avanzada para garantizar diagnósticos precisos y
+                            tratamientos efectivos. Nos esforzamos por brindar una experiencia cómoda y segura en cada
+                            visita, y nos comprometemos a mantener los más altos estándares de excelencia médica en
+                            todas
+                            nuestras prácticas. Tu salud y satisfacción son nuestra prioridad número uno</p>
+                    </div>
+
+
+                    <div class="pregunta">
+                        <h3 class="faq-question">¿Por qué somos diferentes de los demás?</h3>
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos destacamos de los demás debido a nuestra dedicación inquebrantable para satisfacer las
+                            necesidades de nuestros pacientes. En nuestro centro médico, nos esforzamos por brindar una
+                            atención personalizada y centrada en el paciente en cada paso del camino. Nuestro equipo de
+                            profesionales altamente capacitados está comprometido con la excelencia en el cuidado de la
+                            salud y se esfuerza por superar las expectativas en términos de calidad y servicio. Además,
+                            nos
+                            enorgullece ofrecer una amplia gama de servicios médicos de vanguardia en instalaciones
+                            modernas
+                            y cómodas. En resumen, nuestra pasión por el cuidado de la salud y nuestro enfoque centrado
+                            en
+                            el paciente nos distingue de los demás y nos hace la elección ideal para todas tus
+                            necesidades
+                            médicas.</p>
+                    </div>
+
+                    <div class="pregunta">
+                        <h3 class="faq-question">Cuidado confiable y experimentado para
+                            adultos mayores</h3>
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nuestro centro médico se especializa en proporcionar un cuidado confiable y experimentado
+                            para
+                            adultos mayores. Reconocemos las necesidades únicas de esta población y nos esforzamos por
+                            ofrecer un enfoque integral que promueva la salud y el bienestar en todas las etapas de la
+                            vida.
+                            Nuestro equipo de profesionales altamente capacitados comprende las complejidades del
+                            envejecimiento y está comprometido con brindar un cuidado compasivo y personalizado. Desde
+                            la
+                            atención médica preventiva hasta el manejo de enfermedades crónicas y el apoyo emocional,
+                            estamos aquí para proporcionar a nuestros pacientes mayores el más alto nivel de atención y
+                            comodidad.</p>
+                    </div>
+
+                    <div class="pregunta">
+                        <h3 class="faq-question">Cómo obtener una cita de emergencia</h3>
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para obtener una cita de emergencia, te recomendamos que nos llames directamente al número de
+                            teléfono de emergencia que se proporciona en nuestro sitio web o que te comuniques con
+                            nuestra
+                            clínica lo antes posible. Nuestro equipo médico está disponible las 24 horas del día, los 7
+                            días
+                            de la semana, para atender tus necesidades urgentes de atención médica. Trabajaremos
+                            rápidamente
+                            para programar una cita para ti y asegurarnos de que recibas la atención adecuada en el
+                            menor
+                            tiempo posible. Tu salud y seguridad son nuestra principal prioridad, y estamos aquí para
+                            ayudarte en cualquier situación de emergencia médica que puedas enfrentar.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="otra-caja">
+
+        <div class="caja-banner">
+
+            <img class="imagen-banner" src="img buscar medicos/img/Group 1000011066.png" alt="imagen-banner">
+
+            <div class="banner-text">
+                <h2>Descarga nuestra App</h2>
+                <p>¡Mantente conectado con nosotros para recibir noticias y actualizaciones!</p>
+                <input type="tel" placeholder="Ingresa tu número de teléfono">
+                <button>Enviar SMS</button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="clinic-info">
+                    <img src="img/Vector (1).png" alt="Logo de la clínica">
+                    <p>Clinica Aurora Salud</p>
+                </div>
+                <div class="clinic-contact">
+                    <p>Av. San Martín, Buenos Aires, Argentina, Código Postal 1425.</p>
+                    <p>+54-9-11-1234-5678</p>
+                    <p>info@ClinicaAuroraSalud.com</p>
+                </div>
+                <div class="social-media">
+                    <a href="#"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/twit.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/pin.png" alt="Pinterest"></a>
+
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="additional-info">
+                    <p>>&nbsp&nbsp Sobre Nosotros</p>
+                    <p>>&nbsp&nbsp Nuestros Precios</p>
+                    <p>>&nbsp&nbsp Galeria</p>
+                    <p>>&nbsp&nbsp Citas Medicas</p>
+                    <p>>&nbsp&nbsp Politica de Privacidad</p>
+
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="more-info">
+                    <div class="additional-info">
+                        <p>>&nbsp&nbsp Dermatología</p>
+                        <p>>&nbsp&nbsp Neurología</p>
+                        <p>>&nbsp&nbsp Odontología</p>
+                        <p>>&nbsp&nbsp Oftalmología</p>
+                        <p>>&nbsp&nbsp Otras Especialidades</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scriptmedico.js"></script>
+
+</body>
+
+
+</html>
