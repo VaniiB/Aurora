@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Registro Medico</title>
+	<link rel="stylesheet" href="styel.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<!-- Imagen con descripcion del lado derecho -->
+	<div class="d-flex">
+		<div>
+			<img src="img jm/Group 1000011084 (1).png" alt="aca va imagen de registro de medicos"
+				class="imagenEstilo" />
+		</div>
+
+		<!-- Aca va el Formulario para Crear Cuenta -->
+		<div class="formularioMedico d-flex flex-column">
+			<h2 class="text-center mb-4 mt-3 fs-2">Crear tu cuenta Profesional</h2>
+			<form id="medicForm">
+				<div class="form-group">
+					<label for="biografia" class="titulo1 mb-2">Biografía o Descripción Personal</label>
+					<textarea class="form-control titulo2" id="biografia"
+						placeholder="Soy un médico comprometido con brindar atención de calidad a mis pacientes"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="nombre" class="titulo1 mb-2">Nombre Completo</label>
+					<input type="text" class="form-control" id="nombre" placeholder="Dr. Juan Pérez" />
+				</div>
+				<div class="form-group">
+					<label for="especialidad" class="titulo1 mb-2">Especialidad Médica</label>
+					<input type="text" class="form-control" id="especialidad" placeholder="Cardiología" />
+				</div>
+				<div class="form-group">
+					<label for="hospital" class="titulo1 mb-2">Hospital o Consultorio Asociado</label>
+					<input type="text" class="form-control" id="hospital" placeholder="Hospital Central" />
+				</div>
+				<div class="form-group">
+					<label for="experiencia" class="titulo1 mb-2">Años de Experiencia</label>
+					<input type="number" class="form-control" id="experiencia" placeholder="10" />
+				</div>
+				<div class="form-group">
+					<label for="horarios" class="titulo1 mb-2">Horarios de Consulta</label>
+					<input type="text" class="form-control" id="horarios"
+						placeholder="Lunes a Viernes de 8:00 AM a 5:00 PM" />
+				</div>
+				<div class="form-group">
+					<label for="urgencia" class="titulo1 mb-2">Disponibilidad de Servicio de Urgencia</label>
+					<select class="form-control" id="urgencia">
+						<option value="si">Sí</option>
+						<option value="no">No</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="matricula" class="titulo1 mb-2">Número de Matrícula</label>
+					<input type="text" class="form-control" id="matricula" placeholder="M12345" />
+				</div>
+				<div class="form-group">
+					<label for="especialidades" class="titulo1 mb-2">Otras Especialidades Médicas (Separadas por
+						coma)</label>
+					<input type="text" class="form-control" id="especialidades"
+						placeholder="Neurología, Endocrinología" />
+				</div>
+				<div class="form-group">
+					<label for="email" class="titulo1 mb-2">Correo Electrónico</label>
+					<input type="email" class="form-control" id="email" placeholder="correo@example.com" />
+				</div>
+				<div class="form-group">
+					<label for="contraseña" class="titulo1 mb-2">Contraseña</label>
+					<input type="password" class="form-control" id="contraseña" placeholder="Contraseña" />
+				</div>
+				<div class="form-group">
+					<label for="confirmarContraseña" class="titulo1 mb-2">Confirmar Contraseña</label>
+					<input type="password" class="form-control" id="confirmarContraseña"
+						placeholder="Confirmar Contraseña" />
+				</div>
+				<div class="center-btn">
+					<button type="submit" class="btn btn-primary mb-2">Crear cuenta</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="regMed.js"></script>
+</body>
+
+</html>

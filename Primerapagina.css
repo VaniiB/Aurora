@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #007484;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    margin-left: 200px;
+    margin-top: 50px; /* Agrega margen arriba */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Ajusta la altura para que haya margen abajo */
+}
+
+.square {
+    width: 556px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(76px);
+    border-radius: 8px;
+    margin-bottom: 20px; /* Agrega espacio entre los cuadrados */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px; /* Cambia el tamaño de fuente */
+    font-family: 'Poppins', sans-serif; /* Usa la fuente Poppins */
+}
+
+.subtitle {
+    font-size: 18px; /* Cambia el tamaño de fuente */
+    font-family: 'Poppins', sans-serif; /* Usa la fuente Poppins */
+}
+
+
+.box {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(76px);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 30px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    padding: 30px;
+    margin-top: 0px;
+}
+
+.container {
+    display: block;
+    margin-left: 200px;
+    margin-top: 50px;
+    height: 100vh;
+}
+/* Tu CSS existente */
+
+/* Añade estilos para las cajas cuando se hace hover */
+.box:hover {
+    background-color: #007484;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+@media only screen and (max-width: 480px) {
+    .box {
+        max-width: 130%; /* Reducir aún más el ancho máximo del contenedor en dispositivos móviles más pequeños */
+        
+        padding: 12px; /* Ajustar el espacio interior */
+        margin: 6px; /* Ajustar el margen */
+        border-radius: 6px; /* Ajustar el radio de borde */
+        margin-left: -150px;
+    }
+
+    .title {
+        font-size: 18px; /* Reducir aún más el tamaño de la fuente del título en dispositivos móviles más pequeños */
+    }
+
+    .subtitle {
+        font-size: 12px; /* Reducir aún más el tamaño de la fuente del subtítulo en dispositivos móviles más pequeños */
+    }
+}

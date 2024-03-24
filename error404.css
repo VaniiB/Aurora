@@ -1,0 +1,522 @@
+.error-404 {
+    text-align: center;
+    
+}
+
+.text-container {
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.container {
+    display:contents;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #E8F0FF, #FFFFFF);
+}
+
+header {
+    background-color: #007484;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.header-text {
+    color: #fff;
+    font-size: 16px; /* Reducido el tamaño de fuente */
+    font-weight: 400;
+	font-family: poppins;
+	margin-top: 10px;
+}
+
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajustado el padding */
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-link img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.clinic-name {
+    color: #029DB2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 16px; /* Reducido el tamaño de fuente */
+    margin-top: 15px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px; /* Reducido el espacio entre elementos del menú */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #102851;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 14px; /* Reducido el tamaño de fuente */
+    transition: color 0.6s ease;
+}
+
+.menu a:hover {
+    color: #007484;
+    font-weight: bold;
+}
+
+.login-button button {
+    color: white;
+    padding: 10px; /* Ajustado el padding */
+}
+
+button {
+    background-color: #007484;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 14px; /* Reducido el tamaño de fuente */
+    border: none;
+    padding: 8px 16px; /* Ajustado el padding */
+    cursor: pointer;
+}
+
+.gradient-bar {
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(to right, #007484, #04C4DF);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.footer {
+    background-color: #007484;
+    width: 100%;
+    height: 424px;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.clinic-info {
+    display: flex;
+    align-items: center;
+}
+
+.clinic-info p {
+    color: #FFFFFF;
+    font-size: 14px; /* Reducido el tamaño de fuente */
+    font-weight: 500;
+}
+
+.clinic-contact p {
+    font-family: Roboto;
+    margin-left: 20px; /* Reducido el margen izquierdo */
+    align-items: center;
+}
+
+.clinic-info img {
+    width: 20px; /* Reducido el tamaño de la imagen */
+    height: auto;
+    margin-right: 5px; /* Reducido el margen derecho */
+}
+
+.social-media a {
+    margin-right: 5px; /* Reducido el margen derecho */
+}
+
+.social-media img {
+    width: 20px; /* Reducido el tamaño de la imagen */
+    height: 20px; /* Reducido el tamaño de la imagen */
+    margin-left: 20px; /* Reducido el margen izquierdo */
+    margin-top: 10px; /* Reducido el margen superior */
+}
+
+.additional-info,
+.more-info {
+    margin-top: 50px; /* Reducido el margen superior */
+    margin-left: 20px; /* Reducido el margen izquierdo */
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+.container {margin-top: 50px;}
+
+
+.div-enlaces a {
+    color: #6C6A6A; /* Cambia el color a tu preferencia */
+	
+}
+
+.div-enlaces a {
+    color: #6C6A6A; /* Color por defecto */
+	font-weight: 450;
+	font-family: poppins;
+	
+}
+
+.div-enlaces a.activo {
+    color: #007484; /* Color activo (verde) */
+	
+	
+}
+
+
+.div-enlaces a:hover {
+    color: #007484; /* Color que desees para el hover */
+	font-weight: 550;
+	font-family: poppins;
+}
+.div-enlaces a.activo,
+.div-enlaces a.activo:hover {
+    color: #007484; /* Color activo y hover */
+}
+
+
+.columnas {
+	margin-bottom: 100px;
+}
+
+
+
+/* Estilos para los botones */
+.boton-hoy,
+.boton-febrero,
+.boton-izquierda,
+.boton-derecha,
+.boton-semana,
+.boton-plus {
+   
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+/* Estilos para el botón "Hoy" */
+.boton-hoy {
+    
+    background-color: #007484;
+}
+
+/* Estilos para el botón de Febrero */
+.boton-febrero {
+    border-color: #309ab0;
+    background-color: #309ab0;
+}
+
+/* Estilos para los botones de flecha */
+.boton-izquierda,
+.boton-derecha {
+    border-color: #00a2b8;
+    background-color: #00a2b8;
+}
+
+/* Estilos para el botón de "Esta semana" */
+.boton-semana {
+    border-color: #004e58;
+    background-color: #004e58;
+}
+
+/* Estilos para el botón de "Más" */
+.boton-plus {
+    border-color: #6c757d;
+    background-color: #6c757d;
+}
+
+
+
+
+
+.footer {
+    background-color: #007484;
+    width: 100%;
+    height: 424px;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+
+
+.clinic-info {
+    display: flex;
+    align-items: center; 
+}
+
+.clinic-info p{
+   color: #FFFFFF;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.clinic-contact p{
+font-family: Roboto;
+margin-left: 40px;
+align-items: center;
+
+
+}
+.clinic-info img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+   
+}
+
+.additional-info,
+.more-info {
+    margin-top: 90px;
+    margin-left: 40px;
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+	body {
+	  font-size: 14px;
+	}
+  
+	.header-text {
+	  font-size: 14px;
+	}
+  
+	.clinic-name {
+	  font-size: 16px;
+	}
+  
+	.menu {
+	  display: none;
+	}
+  
+	.login-button {
+	  display: none;
+	}
+  
+	.container {
+	  padding: 0 10px;
+	}
+  
+	.titulos {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.div-enlaces {
+	  margin-top: 10px;
+	  text-align: center;
+	}
+  
+	.aaaa,
+	.aaa {
+	  display: block;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	}
+  
+	.columnas {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+
+	.footer {
+		background-color: #007484;
+		width: 100%;
+		height: 420px;
+		color: #fff;
+		position: relative;
+		bottom: 0;
+		left: 0;
+		z-index: 9999;
+		margin-top: 40px;
+	
+	}
+	
+	.footer-container {
+		
+		display:grid;
+		justify-content: space-between;
+		padding: 40px;
+		align-items: center;
+		margin-left: 200px;
+		justify-content:right;
+		margin-left: 30px;
+	}
+	
+	.footer-column {
+		flex: 1;
+	}
+	
+	
+	.clinic-info {
+		display: flex;
+		justify-content:left;
+		margin-left: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.clinic-info p {
+		color: #FFFFFF;
+		font-size: 20px;
+		font-weight: 500;
+		margin-top: 20px;
+		display: flex;
+		align-items: center; 
+		justify-content:right;
+	}
+	
+	.clinic-contact p{
+		display: flex;
+		margin-top: 20px;
+		margin-right: 20px;
+	font-family: Roboto;
+	margin-left: 40px;
+	align-items: center;
+	
+	
+	}
+	.clinic-info img {
+		width: 30px;
+		height: auto;
+		margin-right: 10px; 
+	}
+	
+	.social-media a {
+		margin-right: 10px;
+	}
+	
+	.social-media img {
+		width: 30px;
+		height: 30px;
+		margin-left: 40px;
+		margin-top: 20px;
+	   
+	}
+	
+	.additional-info,
+	.more-info {
+	   display: none;
+	}
+	
+	
+	/* Ocultar el calendario, estadísticas de mayo y las imágenes */
+	.dropdown-item,
+	.dropdown-divider,
+	.dropdown-menu,
+	.boton-semana,
+	.boton-derecha,
+	.boton-izquierda,
+	.fa-solid,
+	.dropdown-item,
+	.seccion2,
+	.seccion3,
+	.grafico1,
+	.citas {
+	  display: none;
+	}
+
+
+	
+
+
+    .error-404 {
+        display: absolute;
+        width: 50px;
+        height: auto;
+        margin-left: 110px;
+    }
+
+    .error-img {
+        display: block; /* Mostrar la imagen */
+        max-width: 100%; /* Máximo ancho de la imagen */
+        height: auto; /* Altura automática para mantener la proporción */
+        margin-top: 20px; /* Espacio superior entre el texto y la imagen */
+    }
+
+
+
+    
+	}
+	
+	
+  
+	
+
+	
+  

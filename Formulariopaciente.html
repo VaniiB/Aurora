@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Médico</title>
+    <link rel="stylesheet" href="styleformulario.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.17/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.17/sweetalert2.all.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <p class="header-text">La salud y el bienestar de nuestros pacientes y su equipo de atención médica siempre
+                serán nuestra prioridad, por lo que seguimos las mejores prácticas de limpieza.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="img/Vector (1).png" alt="Logo de la clínica" width="35" height="33">
+                <p class="clinic-name">Clinica Aurora Salud</p>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Encontrar Doctores</a></li>
+            <li><a href="#">Solicitud de Turno</a></li>
+            <li><a href="#">Visualización de Turnos</a></li>
+            <li><a href="Loginprofesional.html">Ingresar como Profesional</a></li>
+        </ul>
+        <div class="login-button">
+            <button>Ingresar</button>
+        </div>
+    </nav>
+
+    <div class="gradient-bar"></div>
+
+
+
+
+
+
+    <div class="container">
+        <h1>Solicitud de Turno</h1>
+
+        <form id="consultaForm">
+            <div class="mb-3">
+                <label for="nombreApellido" class="form-label">Nombre y Apellido:</label>
+                <input type="text" class="form-control" id="nombreApellido" name="nombreApellido" required>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto:</label>
+                <input type="text" class="form-control" id="asunto" name="asunto" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="especialidad" class="form-label">Especialidad:</label>
+                <select class="form-select" id="especialidad" name="especialidad" required>
+                    <option value="" disabled selected>Selecciona una especialidad</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Dermatología">Dermatología</option>
+                    <option value="Ginecología">Ginecología</option>
+                    <option value="Neurología">Neurología</option>
+                    <option value="Oftalmología">Oftalmología</option>
+                    <option value="Otra Especialidad">Otra Especialidad</option>
+
+                </select>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="horario" class="form-label">Horario:</label>
+                <select class="form-select" id="horario" name="horario" required>
+                    <option value="" disabled selected>Selecciona un horario</option>
+                    <option value="16:00hs a 16:30hs">16:00hs a 16:30hs</option>
+                    <option value="18:00hs a 18:30hs">18:00hs a 18:30hs</option>
+                    <option value="19:00hs a 19:30hs">19:00hs a 19:30hs</option>
+                    <option value="20:00hs a 20:30hs">20:00hs a 20:30hs</option>
+                    <option value="21:00hs a 21:30hs">21:00hs a 21:30hs</option>
+                    <option value="22:00hs a 22:30hs">22:00hs a 22:30hs</option>
+
+
+                </select>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="dia" class="form-label">Día:</label>
+                <select class="form-select" id="dia" name="dia" required>
+                    <option value="" disabled selected>Selecciona un día</option>
+
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miercoles">Miercoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+
+
+
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="motivoConsulta" class="form-label">Motivo de la consulta:</label>
+                <textarea id="motivoConsulta" name="motivoConsulta" class="form-control" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" id="solicitarCitaButton" class="btn btn-primary">Solicitar Cita</button>
+        </form>
+
+
+    </div>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="clinic-info">
+                    <img src="img/Vector (1).png" alt="Logo de la clínica">
+                    <p>Clinica Aurora Salud</p>
+                </div>
+                <div class="clinic-contact">
+                    <p>Av. San Martín, Buenos Aires, Argentina, Código Postal 1425.</p>
+                    <p>+54-9-11-1234-5678</p>
+                    <p>info@ClinicaAuroraSalud.com</p>
+                </div>
+                <div class="social-media">
+                    <a href="#"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/twit.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/pin.png" alt="Pinterest"></a>
+
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="additional-info">
+                    <p>>&nbsp&nbsp Vanina Balbastro</p>
+                    <p>>&nbsp&nbsp Celeste Lara</p>
+                    <p>>&nbsp&nbsp Juan Manuel Maturana</p>
+                    <p>>&nbsp&nbsp Franco Tarulli</p>
+                    <p>>&nbsp&nbsp Nicolas Ferreyra</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="more-info">
+                    <div class="additional-info">
+                        <p>>&nbsp&nbsp Dermatología</p>
+                        <p>>&nbsp&nbsp Neurología</p>
+                        <p>>&nbsp&nbsp Odontología</p>
+                        <p>>&nbsp&nbsp Oftalmología</p>
+                        <p>>&nbsp&nbsp Otras Especialidades</p>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Scriptformulario.js"></script>
+</body>
+
+
+
+</html>
