@@ -11,9 +11,14 @@ document.getElementById('medicForm').addEventListener('submit', function (event)
     const urgencia = document.getElementById('urgencia').checked; 
     const matricula = document.getElementById('matricula').value.trim();
     const especialidades = document.getElementById('especialidades').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const contraseña = document.getElementById('contraseña').value.trim();
+
 
     if (
         biografia === '' ||
+        email === '' ||
+        contraseña === '' ||
         nombre === '' ||
         especialidad === '' ||
         hospital === '' ||
@@ -36,6 +41,8 @@ document.getElementById('medicForm').addEventListener('submit', function (event)
         urgencia: urgencia,
         matricula: matricula,
         especialidades: especialidades,
+        email: email,
+        contraseña: contraseña,
     };
 
 

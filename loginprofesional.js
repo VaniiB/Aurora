@@ -9,28 +9,26 @@ function validateForm(event) {
         return false;
     }
 
-    const registros = JSON.parse(localStorage.getItem("usuarios"));
+    const registros = JSON.parse(localStorage.getItem("medicos"));
 
     let usuarioEncontrado = false;
-    let contraseñaCorrecta = false;
-
     if (registros) {
         registros.forEach(function(registro) {
             if (registro.email === email) {
-                usuarioEncontrado = true;
+                usuarioEncontrado = true; // Se encontró el usuario
                 if (registro.contraseña === contraseña) {
-                    contraseñaCorrecta = true;
+                    window.location.href = "perfilmedico.html";
+                    return; // Contraseña correcta, redirigir al perfil
+                } else {
+                    alert("Contraseña incorrecta.");
+                    return; // Contraseña incorrecta
                 }
             }
         });
     }
 
-    if (usuarioEncontrado && contraseñaCorrecta) {
-        window.location.href = "perfilmedico.html";
-    } else if (usuarioEncontrado && !contraseñaCorrecta) {
-        alert("Contraseña incorrecta.");
-    } else {
-        alert("Usuario no registrado.");
+    if (!usuarioEncontrado) {
+        alert("Usuario no registrado."); // Usuario no encontrado en los registros
         window.location.href = "regmed.html";
     }
 
