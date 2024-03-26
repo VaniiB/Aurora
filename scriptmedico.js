@@ -167,8 +167,8 @@ visualizacionTurnosLink.addEventListener('click', function(event) {
 document.addEventListener("DOMContentLoaded", function() {
     var profesionalLink = document.getElementById("profesional-link");
     profesionalLink.addEventListener("click", function(event) {
-        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-        window.location.href = "login.html"; // Redirige a regmed.html
+        event.preventDefault(); 
+        window.location.href = "login.html"; 
     });
 });
 
@@ -176,14 +176,14 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     const pageNumbers = document.querySelectorAll(".page-number");
 
-    // Agrega un event listener a cada botón de paginación
+
     pageNumbers.forEach(button => {
         button.addEventListener("click", function() {
-            // Remueve la clase 'active' de todos los botones de paginación
+
             pageNumbers.forEach(btn => {
                 btn.classList.remove("active");
             });
-            // Agrega la clase 'active' al botón de paginación clickeado
+
             button.classList.add("active");
         });
     });

@@ -106,8 +106,8 @@ button {
     cursor: pointer;
 }
 .custom-button a {
-  color: #fff; /* Color del texto blanco */
-  text-decoration: none; /* Quita el subrayado */
+  color: #fff; 
+  text-decoration: none; 
 }
 
 .gradient-bar {

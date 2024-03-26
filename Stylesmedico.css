@@ -1,34 +1,34 @@
 .custom-button {
-    background-color: #007484; /* Color de fondo */
-    border: none; /* Sin borde */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Eliminar subrayado */
-    display: inline-block; /* Mostrar como elemento en línea */
-    font-size: 16px; /* Tamaño de fuente */
-    cursor: pointer; /* Cursor */
-    border-radius: 0px; /* Bordes redondeados */
+    background-color: #007484; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 0px; 
 }
 
 .custom-button:hover {
-    background-color: #007484; /* Cambio de color al pasar el mouse */
+    background-color: #007484; 
 }
 
 .custom-button a {
-    color: inherit; /* Heredar color del texto */
-    text-decoration: none; /* Eliminar subrayado */
+    color: inherit; 
+    text-decoration: none; 
 }
 
 .active {
-    background-color: #007bff; /* Color de fondo activo deseado */
-    color: #fff; /* Color de texto deseado */
+    background-color: #007bff; 
+    color: #fff; 
 }
 
 
 .search-button a {
-    text-decoration: none; /* Eliminar el subrayado */
-    color: white; /* Color del texto blanco */
+    text-decoration: none; 
+    color: white; 
 }
 
 
@@ -156,7 +156,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-   background: linear-gradient(to right, #E8F0FF, #FFFFFF); /* Degradado lineal de izquierda a derecha */
+   background: linear-gradient(to right, #E8F0FF, #FFFFFF); 
 }
 body, h1, h2, h3, h4, h5, p, a, button, input, label, select, textarea {
     font-family: 'Poppins', sans-serif;
@@ -190,18 +190,18 @@ nav {
 }
 
 .logo-container {
-    text-align: center; /* Centrar el texto */
+    text-align: center; 
 }
 
 .logo-link {
-    display: inline-flex; /* Usar flexbox y mantener en línea */
-    align-items: center; /* Centrar verticalmente */
-    text-decoration: none; /* Quitar subrayado */
+    display: inline-flex; 
+    align-items: center;
+    text-decoration: none; 
 }
 
 .logo-link img {
-    margin-right: 5px; /* Espacio entre la imagen y el texto */
-    vertical-align: middle; /* Alinear verticalmente */
+    margin-right: 5px; 
+    vertical-align: middle;
 }
 
 
@@ -348,7 +348,7 @@ button {
 }
 
 .search-button {
-    margin-top: 0; /* Elimina el espacio en blanco superior */
+    margin-top: 0; 
 }
 
 

@@ -2,7 +2,6 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
-/* estilos imagen */
 
 .imagenEstilo {
 	width: 100%;
@@ -13,7 +12,6 @@ body {
 	background: rgba(0, 116, 132, 1);
 }
 
-/* estilos para formulario */
 .form-group {
 	margin-bottom: 30px;
 }
@@ -28,22 +26,21 @@ body {
 }
 
 
-/* estilos para formulario */
 .formularioMedico {
-    max-width: 630px; /* Se establece un máximo de 630px para el formulario */
+    max-width: 630px; 
     margin-top: 24px;
-    margin-left: auto; /* Centra el formulario horizontalmente */
-    margin-right: auto; /* Centra el formulario horizontalmente */
-    padding-left: 30px; /* Agrega un poco de espacio a la izquierda para mayor claridad */
-    padding-right: 30px; /* Agrega un poco de espacio a la derecha para mayor claridad */
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-left: 30px;
+    padding-right: 30px; 
     font-family: 'Poppins', sans-serif;
 }
 
-/* estilos para el contenedor principal */
+
 .d-flex {
     display: flex;
-    justify-content: center; /* Centra los elementos hijos horizontalmente */
-    align-items: center; /* Centra los elementos hijos verticalmente */
+    justify-content: center; 
+    align-items: center; 
 }
 
 

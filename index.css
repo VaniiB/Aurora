@@ -31,13 +31,13 @@ body {
 .container {
     position: relative;
     margin-left: 200px;
-    margin-top: 50px; /* Agrega margen arriba */
+    margin-top: 50px; 
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 100px); /* Ajusta la altura para que haya margen abajo */
+    height: calc(100vh - 100px); 
 }
 
 .square {
@@ -46,7 +46,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(76px);
     border-radius: 8px;
-    margin-bottom: 20px; /* Agrega espacio entre los cuadrados */
+    margin-bottom: 20px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,13 +54,13 @@ body {
 }
 
 .title {
-    font-size: 24px; /* Cambia el tamaño de fuente */
-    font-family: 'Poppins', sans-serif; /* Usa la fuente Poppins */
+    font-size: 24px; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 .subtitle {
-    font-size: 18px; /* Cambia el tamaño de fuente */
-    font-family: 'Poppins', sans-serif; /* Usa la fuente Poppins */
+    font-size: 18px; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 
@@ -98,9 +98,7 @@ body {
     margin-top: 50px;
     height: 100vh;
 }
-/* Tu CSS existente */
 
-/* Añade estilos para las cajas cuando se hace hover */
 .box:hover {
     background-color: #007484;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -108,19 +106,19 @@ body {
 }
 @media only screen and (max-width: 480px) {
     .box {
-        max-width: 130%; /* Reducir aún más el ancho máximo del contenedor en dispositivos móviles más pequeños */
+        max-width: 130%;
         
-        padding: 12px; /* Ajustar el espacio interior */
-        margin: 6px; /* Ajustar el margen */
-        border-radius: 6px; /* Ajustar el radio de borde */
+        padding: 12px; 
+        margin: 6px; 
+        border-radius: 6px; 
         margin-left: -150px;
     }
 
     .title {
-        font-size: 18px; /* Reducir aún más el tamaño de la fuente del título en dispositivos móviles más pequeños */
+        font-size: 18px; 
     }
 
     .subtitle {
-        font-size: 12px; /* Reducir aún más el tamaño de la fuente del subtítulo en dispositivos móviles más pequeños */
+        font-size: 12px; 
     }
 }
