@@ -17,13 +17,9 @@ function validateForm(event) {
     if (registros) {
         registros.forEach(function(registro) {
             if (registro.email === email) {
+                usuarioEncontrado = true;
                 if (registro.contraseña === contraseña) {
-                    usuarioEncontrado = true;
                     contraseñaCorrecta = true;
-                    return; // No es necesario seguir iterando si se encontró una coincidencia
-                } else {
-                    contraseñaCorrecta = false;
-                    return; // No es necesario seguir iterando si se encontró una coincidencia con email pero contraseña incorrecta
                 }
             }
         });
